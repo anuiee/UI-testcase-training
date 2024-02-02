@@ -1,0 +1,36 @@
+
+@import "../../../../assets/scss/base/mixins.scss";
+@import "../../../../assets/scss/base/colors.scss";
+
+.bx-title{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    &__sub{
+        display: flex;
+    }
+    &__img{
+        width: 30px;
+        height: auto;
+        &--middle{
+            display: none;
+        }
+
+    }
+    &__text{
+        font-size: 15px;
+        
+    }
+    &__para{
+        font-size: 15px;
+        color: $white;
+        opacity: 0.5;
+    }
+  
+}
+.bx-title:hover{
+    background-color: rgb(158, 163, 201);
+    
+}

@@ -1,0 +1,85 @@
+
+@import "../../../../assets/scss/base/mixins.scss";
+@import "../../../../assets/scss/base/colors.scss";
+
+.bx-textarea-div{
+    display: flex;
+    border: 1px solid $border;
+    width: 100%;
+    justify-content: space-between;
+     height: 100px;
+    &__img{
+        // width: 25px;
+        //height:20px;
+        margin-right: 15px;
+
+    }
+    &__style{
+        border: none;
+        width:70%;
+         height: 90px;
+         position: relative;
+         //margin-left: 10px;
+         resize: none;
+         
+    }
+}
+.invalid{
+    border:1px solid $red
+}
+.bx-textarea-div__style:focus{
+    outline:none;
+}
+
+@include tablet{
+    .bx-textarea-div{
+        display: flex;
+        border: 1px solid $border;
+        width: calc(100% - 20px);
+        margin: 10px;
+        justify-content: space-between;
+         height: 100px;
+        &__img{
+            // width: 25px;
+            //height:20px;
+            margin-right: 15px;
+    
+        }
+        &__style{
+            border: none;
+            width:100%;
+             height: 90px;
+             position: relative;
+            //  margin-left: 10px;
+             resize: none;
+             
+        }
+    }
+    .bx-textarea-div__style:focus{
+        outline:none;
+    }
+}
+
+@include mobile{
+    .bx-textarea-div{
+        display: flex;
+        border: 1px solid $border;
+        width: calc(100% - 20px);
+        margin: 10px;
+        justify-content: space-between;
+         height: 100px;
+        &__img{
+            width: 25px;
+            height:20px;
+        }
+        &__style{
+            border: none;
+            width: 70%;
+             height: 90px;
+             position: relative;
+              margin-left: 10px;
+             resize: none;
+             
+        }
+    }
+}

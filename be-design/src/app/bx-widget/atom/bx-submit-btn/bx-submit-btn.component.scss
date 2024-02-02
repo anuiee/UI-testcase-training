@@ -1,0 +1,36 @@
+@import "../../../../assets/scss/base/colors.scss";
+@import "../../../../assets/scss/base/mixins.scss";
+
+.bx-submit-btn{
+    display: flex;
+    background-color: #0089B8;
+    color: $white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    //margin-top: 160px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+// .bx-buttonIcon{
+//     margin-top:-3;
+// }
+@include mobile{
+    .bx-submit-btn{
+        display: flex;
+        background-color: #0089B8;
+        color: $white;
+        border: none;
+        width: 120px;
+        height: 40px;
+        padding: 10px;
+        //margin-top: 160px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+}

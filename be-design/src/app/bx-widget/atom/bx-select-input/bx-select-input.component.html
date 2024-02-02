@@ -1,0 +1,16 @@
+
+    <ng-container [formGroup]="parentForm" >
+        <div class="bx-input-div"  [ngStyle]="customDivStyle"
+             [ngClass]="{'invalid': parentForm.get(control)?.touched && parentForm.get(control)?.invalid}"  
+    >
+          <div class="dropdown-container">
+            <select class="bx-input-div__style" [ngStyle]="customInputStyle" [name]="name" id="select" [formControlName]="control">
+              <option value="" disabled selected hidden>{{ name }}</option>
+              <option *ngFor="let option of options" [value]="option.value">{{ option.label }}</option>
+            </select>
+          </div>
+          <div>
+            <img class="bx-input-div__img" [src]="iconSrc" alt="icon" [ngStyle]="customStyle">
+          </div>
+        </div>
+      </ng-container>

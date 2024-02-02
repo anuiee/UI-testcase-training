@@ -1,0 +1,13 @@
+<ng-container [formGroup]="parentForm">
+<div class="bx-input-div" [ngStyle]="customDivStyle" 
+    [ngClass]="{'invalid': parentForm.get(control)?.touched && parentForm.get(control)?.invalid}"  
+>
+    <div>
+        <input class="bx-input-div__style" type="{{type}}" name="{{name}}" placeholder="{{placeHolder}}" [formControlName]="control"
+        >
+    </div>
+    <div>
+        <img class="bx-input-div__img" [src]="iconSrc" alt="icon">
+    </div>
+</div>
+</ng-container>

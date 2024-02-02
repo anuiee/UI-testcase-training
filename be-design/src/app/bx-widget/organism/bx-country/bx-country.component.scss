@@ -1,0 +1,75 @@
+
+@import "../../../../assets/scss/base/mixins.scss";
+@import "../../../../assets/scss/base/colors.scss";
+
+.bx-content-wrapper{
+    display: flex;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bx-country{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color:$country ;
+    justify-content: center;
+    &__sub{
+        width: 20%;
+        display: flex;
+        //flex-wrap: wrap;
+        padding: 0;
+       
+    }
+}
+
+
+
+@include mobile{
+    .bx-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bx-country{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1250px;
+        &__sub{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+            margin-top: 0;
+            // margin-top: -47px;
+
+        }
+    }   
+}
+@include tablet{
+    .bx-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bx-country{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1250px;
+        &__sub{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+            margin-top: 0;
+            // margin-top: -47px;
+
+        }
+    }   
+}

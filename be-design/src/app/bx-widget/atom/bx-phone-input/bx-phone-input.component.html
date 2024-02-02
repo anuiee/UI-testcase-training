@@ -1,0 +1,21 @@
+<ng-container [formGroup]="parentForm">
+    <div class="bx-input-div" >
+        <div class="bx-input-div__sub">
+        <!-- <div class="dropdown-container">
+            <select class="bx-input-div__selectStyle" name={{codeName}} id="select" formControlName="codeControl" >
+                <option value="" disabled selected hidden>Code</option>
+                <option value="+91">+91</option>
+                <option value="+1">+1</option>
+                <option value="+971">+971</option>
+                <option value="+44">+44</option>
+              </select>
+        </div> -->
+        <div>
+            <input class="bx-input-div__style" type="{{type}}" name="{{name}}" placeholder="{{placeHolder}}" [formControlName]="control">
+        </div>
+    </div>
+        <div>
+            <img class="bx-input-div__img" [src]="iconSrc" alt="icon">
+        </div>
+    </div>
+    </ng-container>

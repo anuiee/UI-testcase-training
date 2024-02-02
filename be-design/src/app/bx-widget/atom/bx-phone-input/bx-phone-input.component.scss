@@ -1,0 +1,78 @@
+@import "../../../../assets/scss/base/mixins.scss";
+@import "../../../../assets/scss/base/colors.scss";
+
+.bx-input-div{
+    display: flex;
+    border: 1px solid rgb(190, 187, 187);
+    width: 100%;
+    height: 35px;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+
+    &__sub{
+        display: flex;
+    }
+//     height: 35px;
+    &__img{
+        // width: 27px;
+        // width:30%;
+        align-items: center;
+        margin-right: 15px;
+
+    }
+    &__style{
+        border: none;
+        width: 60%;
+        height: 33px;
+        color: $gray;
+         //position: relative;
+         margin-left:10px;
+    }
+    &__selectStyle{
+        border: none;
+        width:40px;
+        height: 33px;
+        color: $gray;
+         //position: relative;
+        border-right: 1px solid rgb(190, 187, 187);
+        margin-left: 10px;
+    }
+}
+.dropdown-container select{
+   appearance: none;
+}
+.dropdown-container option{
+    height: 100px;
+ }
+.bx-input-div__style:focus{
+   outline: none;
+}
+.dropdown-container select{
+    appearance: none;
+ }
+@include mobile{
+    .bx-input-div{
+        display: flex;
+        border: 1px solid rgb(190, 187, 187);
+        width: 170px;
+        justify-content: space-between;
+    //     height: 35px;
+        &__img{
+            width: 15px;
+            height:15px;
+        }
+        &__style{
+            border: none;
+            width: 130px;
+             height: 30px;
+             position: relative;
+             margin-left: 10px;
+             
+        }
+    }
+    .bx-input-div__style:focus{
+        display: none;
+    }
+}
+

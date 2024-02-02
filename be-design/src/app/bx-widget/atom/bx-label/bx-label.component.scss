@@ -1,0 +1,27 @@
+@import "../../../../assets/scss/base/mixins.scss";
+@import "../../../../assets/scss/base/colors.scss";
+
+.bx-label{
+    font-size: 18px;
+    color: $black;
+    opacity: 0.8;
+}
+
+@include mobile{
+    .bx-label{
+        font-size: 15px;
+        color: $black;
+        opacity: 0.8;
+        max-width: 500px;
+    }
+}
+
+@include tablet{
+    .bx-label{
+        font-size: 15px;
+        color: $black;
+        opacity: 0.8;
+        max-width: 500px;
+        margin-left: 10px;
+    }
+}

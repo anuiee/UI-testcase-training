@@ -1,0 +1,74 @@
+@import "../../../../assets/scss/base/colors.scss";
+@import "../../../../assets/scss/base/mixins.scss";
+
+.bx-content-wrapper{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bx-contact{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    background-color:$white ;
+    margin: 0;
+    &__left{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        margin-left: 15px;
+        margin-right: 66px;
+    }
+}
+@include tablet{
+    .bx-contact{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1600px;
+        background-color:$white ;
+        &__left{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 0;
+        }
+        &__right{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}
+@include mobile{
+    .bx-contact{
+        display: flex;
+        width: 100%;
+        height:1700px;
+        flex-direction: column;
+        background-color:$white ;
+        &__left{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &__right{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+

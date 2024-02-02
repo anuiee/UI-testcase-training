@@ -1,0 +1,18 @@
+@import "../../../../assets/scss/base/colors.scss";
+@import "../../../../assets/scss/base/colors.scss";
+
+.bx-mail-box{
+    display: flex;
+    width: 400px;
+
+    &__input{
+        width: 386px;
+        height: 41px;
+    }
+    &__arrow-enter{
+        width: 30px;
+        height: 41px;
+        background-color: $color;
+    }
+}
+

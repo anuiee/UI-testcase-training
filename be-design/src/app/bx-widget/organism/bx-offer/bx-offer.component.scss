@@ -1,0 +1,125 @@
+@import "../../../../assets/scss/base/colors.scss";
+@import "../../../../assets/scss/base/mixins.scss";
+
+.bx-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bx-offer-card{
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 630px;
+    align-items: center;
+    background: radial-gradient(200.11% 117.15% at 97.19% -7.23%, #0089B8 0%, #012C6D 100%);
+    &__h4{
+       
+        height: 50px;
+        color: $white;
+        align-items: center;
+        margin-top: 100px;
+        
+    }
+    &__head{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__content{
+        height: 200px;
+        margin-top: 220px;
+    }
+
+    &__btn{
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        // z-index: 2;
+    }
+    
+}
+
+@include tablet{
+    .bx-offer-card{
+    
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1100px;
+        align-items: center;
+        background: radial-gradient(200.11% 117.15% at 97.19% -7.23%, #0089B8 0%, #012C6D 100%);
+        &__h4{
+           
+            height: 50px;
+            color: $white;
+            align-items: center;
+            margin-top: 100px;
+    
+        }
+        &__head{
+            display: flex;
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+        }
+        &__content{
+            height: 500px;
+            margin-top:400px;
+        }
+    
+        &__btn{
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+        
+    }
+}
+
+@include mobile{
+    .bx-offer-card{
+    
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 1100px;
+        align-items: center;
+        background: radial-gradient(200.11% 117.15% at 97.19% -7.23%, #0089B8 0%, #012C6D 100%);
+        &__h4{
+           
+            height: 50px;
+            color: $white;
+            align-items: center;
+            margin-top: 50px;
+    
+        }
+        &__head{
+            display: flex;
+            width: 100%;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+        }
+        &__content{
+            height: 500px;
+            margin-top:450px;
+        }
+    
+        &__btn{
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+        
+    }
+}

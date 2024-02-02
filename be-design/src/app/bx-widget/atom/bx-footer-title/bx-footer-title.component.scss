@@ -1,0 +1,26 @@
+
+@import "../../../../assets/scss/base/colors.scss";
+.bx-title{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    &__sub{
+        display: flex;
+    }
+    &__img{
+        width: 30px;
+        height: auto;
+        &--middle{
+            display: none;
+        }
+
+    }
+    &__text{
+        font-size: 15px;
+        
+    }
+  
+}

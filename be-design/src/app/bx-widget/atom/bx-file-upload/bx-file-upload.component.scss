@@ -1,0 +1,85 @@
+@import "../../../../assets/scss/base/colors.scss";
+@import "../../../../assets/scss/base/mixins.scss";
+
+#file-input {
+    display: none;
+  }
+
+  #file-input-label {
+    display: flex;
+    padding: 10px 15px;
+    border: 1px solid $uploadBorder;
+    border-radius: 4%;
+    margin-left: 20px;
+    width: 116px;
+    height: 31px;
+    text-align: center;
+    background-color:$upload;
+    color:$black;
+    font-size: 14px;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+  }
+  .invalid{
+    border:1px solid $red
+  }
+
+  @include tablet{
+
+    #file-input {
+      display: none;
+    }
+  
+    #file-input-label {
+      display: flex;
+      padding: 10px 15px;
+      border: 1px solid $uploadBorder;
+      border-radius: 4%;
+      margin-left: 10px;
+      width: 116px;
+      height: 31px;
+      text-align: center;
+      background-color:$upload;
+      color:$black;
+      font-size: 14px;
+      font-style: normal;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      line-height: normal;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+
+  @include mobile{
+
+    #file-input {
+      display: none;
+    }
+  
+    #file-input-label {
+      display: flex;
+      padding: 10px 15px;
+      border: 1px solid $uploadBorder;
+      border-radius: 4%;
+      margin-left: 0;
+      width: 116px;
+      height: 31px;
+      text-align: center;
+      background-color:$upload;
+      color:$black;
+      font-size: 14px;
+      font-style: normal;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      line-height: normal;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }

@@ -1,0 +1,185 @@
+
+<div class="bx-form">
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <!-- row1 start -->
+    <!-- col-name start-->
+     <div class="bx-form__row">
+        <div class="bx-form__left">
+            <app-bx-input-field 
+            [type]="'text'"
+            [name]="'name'"
+            [control]="'name'"
+            [parentForm]="myForm"
+            [placeHolder]="'Name'"
+            [iconSrc]="'../../../../assets/icons/name.svg'"
+            ></app-bx-input-field>
+        </div>
+        <!--col name end-->
+
+        <!--col company start-->
+        <div class="bx-form__right">
+            <app-bx-input-field 
+            [type]="'text'"
+            [name]="'company'"
+            [control]="'company'"
+            [parentForm]="myForm"
+            [placeHolder]="'Company'"
+            [iconSrc]="'../../../../assets/icons/company.svg'"
+            ></app-bx-input-field>
+        </div>
+        <!--col company end-->
+    </div> 
+<!-- row1 end-->
+
+<!-- row2 start-->
+    <div class="bx-form__row">
+        <!--col email start-->
+       <div class="bx-form__left">
+           <app-bx-input-field 
+           [type]="'email'"
+           [name]="'email'"
+           [control]="'email'"
+           [parentForm]="myForm"
+           [placeHolder]="'Email Id'"
+           [iconSrc]="'../../../../assets/icons/email.svg'"
+           ></app-bx-input-field>
+       </div>
+        <!--col email end-->
+
+        <!--col job role start-->
+       <div class="bx-form__right">
+           <app-bx-input-field 
+           [type]="'text'"
+           [name]="'role'"
+           [control]="'role'"
+           [parentForm]="myForm"
+           [placeHolder]="'Job Role'"
+           [iconSrc]="'../../../../assets/icons/role.svg'"
+           ></app-bx-input-field>
+       </div>
+        <!--col job role end-->
+       </div>
+<!-- row2 end-->
+
+<!-- row3 start -->
+       <div class="bx-form__row">
+        <!--col Phone start-->
+        <div class="bx-form__modfied" 
+        [ngClass]="{'invalid': myForm?.get('code')?.touched && myForm?.get('code')?.invalid || 
+        myForm?.get('phone')?.touched && myForm?.get('phone')?.invalid}" 
+        >
+        <!--country code select input-->
+            <app-bx-select-input
+            [name]="'Code'"
+            [control]="'code'"
+            [parentForm]="myForm"
+            [options]="countryCodes"
+            [customStyle]="dynamicstyle"
+            [customDivStyle]="dynamicDivStyle"
+            [customInputStyle]="dynamicInputStyle"
+          ></app-bx-select-input>
+        <!--col Phone number input-->
+            <app-bx-input-field 
+            [type]="'text'"
+            [name]="'phone'"
+            [control]="'phone'"
+           [parentForm]="myForm"
+            [placeHolder]="'Phone number'"
+            [iconSrc]="'../../../../assets/icons/phone.svg'"
+            [customDivStyle]="dynamicPhoneStyle"
+            ></app-bx-input-field>
+        </div>
+        <!--col Phone end-->
+        <!--col select country start-->
+        <div class="bx-form__right">
+            <app-bx-select-input
+            [name]="'Select Country'"
+            [control]="'country'"
+            [parentForm]="myForm"
+            [iconSrc]="'../../../../assets/icons/country.svg'"
+            [options]="countryOptions"
+          ></app-bx-select-input>
+        </div>
+        <!--col select country end-->
+        </div>
+<!-- row3 end  -->
+
+<!-- row 4 start textarea-message -->
+        <div class="bx-form__row">
+        <app-bx-text-area
+            [name]="'message'"
+            [control]="'message'"
+            [parentForm]="myForm"
+            [placeHolder]="'Your Message for Us'"
+            [iconSrc]="'../../../../assets/icons/message.svg'"
+        ></app-bx-text-area>
+        </div>
+<!-- row 4 end textarea-message-->
+
+<!-- row 5 for label start-->
+        <div class="bx-form__row bx-form__row--row3">
+        <app-bx-label 
+        [labelText]="'What are you looking for?'"
+        ></app-bx-label>
+        </div>
+<!-- row 5 for label end-->
+
+<!-- row for badges start -->
+        <div class="bx-form__row bx-form__row--row1"> 
+        <app-bx-rounnd-btn [badgeText]="'Events'"></app-bx-rounnd-btn>
+        <app-bx-rounnd-btn [badgeText]="'Services'"></app-bx-rounnd-btn>
+        <app-bx-rounnd-btn [badgeText]="'Careers'"></app-bx-rounnd-btn>
+        <app-bx-rounnd-btn [badgeText]="'Partner Info'"></app-bx-rounnd-btn>
+        <app-bx-rounnd-btn [badgeText]="'Blogs and other Contents'"></app-bx-rounnd-btn>
+        </div>
+<!-- row for badges end-->
+         
+<!-- row  for label start-->
+        <div class="bx-form__row bx-form__row--row3">
+        <app-bx-label 
+        [labelText]="'What you think we should know about you or your project:'"
+        ></app-bx-label>
+        </div>
+<!-- row  for label end-->
+
+<!-- row  for comment texarea start-->
+        <div class="bx-form__row">
+        <app-bx-text-area
+        [name]="'comment'"
+        [control]="'comment'"
+        [parentForm]="myForm"
+        [placeHolder]="'YourText here'"
+        [iconSrc]="'../../../../assets/icons/form-icons/person.svg'"
+        [textareaStyle]="textareaStyle"
+        [customStyle]="dynamicstyle"
+        ></app-bx-text-area>
+        </div>
+<!-- row  for comment texarea end -->
+
+<!-- row  for upload file start-->
+        <div class="bx-form__row bx-form__row--row3">
+        <app-bx-label 
+        [labelText]="'Upload more info as a MS.Word or PDF file:'"
+        ></app-bx-label>
+        <app-bx-file-upload
+        [name]="'inputFile'"
+        [parentForm]="myForm"
+        [control]="'inputFile'"
+        ></app-bx-file-upload>
+        </div>
+<!-- row  for upload file end-->
+
+<!-- row  for submit button start-->
+        <div class="bx-form__row bx-form__row--row2">
+        <app-bx-submit-btn 
+        [btnText]="'Submit'"
+        [dynamicStyle]="customStyles"
+        ></app-bx-submit-btn>
+        </div>
+<!-- row  for submit button end-->
+
+</form>         
+</div>  
+
+
+

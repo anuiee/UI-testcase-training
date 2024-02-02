@@ -1,0 +1,12 @@
+<ng-container [formGroup]="parentForm">
+<div class="bx-textarea-div" 
+     [ngClass]="{'invalid': parentForm.get(control)?.touched && parentForm.get(control)?.invalid}"  
+>
+    <div>
+        <textarea  class="bx-textarea-div__style" cols="100"  name="{{name}}" placeholder="{{placeHolder}}" [formControlName]="control" [ngStyle]="textareaStyle"></textarea>
+    </div>
+    <div>
+        <img class="bx-textarea-div__img" [src]="iconSrc" [ngStyle]="customStyle" alt="icon">
+    </div>
+</div>
+</ng-container>

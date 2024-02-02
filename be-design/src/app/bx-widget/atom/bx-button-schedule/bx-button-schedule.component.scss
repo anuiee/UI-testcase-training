@@ -1,0 +1,46 @@
+@import '../../../../assets/scss/base/colors.scss';
+.bx-navbar_button {
+    display: flex;
+    background-color:$color;
+    color: $white ;
+    height: 25px;
+    width: 160px;
+    margin-right: 50px;
+    margin-top: 10px;
+    border: none;
+    &--blue{
+        margin-left: 50;
+        margin-right: 50px;
+        margin-top: 0;
+        width: 200px;
+        height:30px;
+        color: rgb(22, 178, 221);
+        background: none;
+        font-size: 18px;
+        font-style: normal;
+    }
+    
+     
+ }
+ .bx-navbar_button:hover{
+    opacity: 0.8;
+ }
+ .bx-navbar_buttonIcon{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+    
+     
+ }
+ .bx-inner_rectangle{
+    height: 20px;
+    width: 130px;
+    margin-left: 10px;
+    &--blue{
+        width: 190px; 
+        height: 30px; 
+    }
+   
+ }

@@ -1,0 +1,15 @@
+ @import "../../../../assets/scss/base/mixins.scss";
+ @import "../../../../assets/scss/base/colors.scss";
+
+.bx-badge{
+    border: 1px solid $badgeBorder;
+    background-color: rgb(214, 244, 244);
+    color: $badgeBorder;
+    font-size: 14px;
+    font-weight: 500;
+    height: 31px;
+    border-radius: 15px;
+    padding: 6px 19px;
+    cursor: pointer;
+    text-align: center;
+}

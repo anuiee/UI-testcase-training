@@ -1,0 +1,14 @@
+<p>bx-display works!</p>
+<div *ngIf="formData$ | async as formData">
+    <p>Name: {{ formData.name }}</p>
+    <p>Company: {{ formData.company }}</p>
+    <p>Job Role: {{ formData.name }}</p>
+    <p>Email: {{ formData.email }}</p>
+    <p>Country Code: {{ formData.code }}</p>
+    <p>Phone: {{ formData.phone }}</p>
+    <p>Country: {{ formData.country }}</p>
+    <p>Message: {{ formData.message }}</p>
+    <p>Comment: {{ formData.comment }}</p>
+    <p>File: {{ formData.inputFile }}</p>
+    <!-- Display other form values as needed -->
+  </div>
